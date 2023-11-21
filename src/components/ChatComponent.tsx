@@ -1,16 +1,18 @@
 import { useState } from "react"
 import ChatFieldComponent from "./ChatFieldComponent"
-interface ChatItem {
-  message_type: string
-  side: string
-  text: string
-  price: number
-  img: Array<string>
 
-}
+// interface ChatItem {
+//   message_type: string
+//   side: string
+//   text: string
+//   price: number
+//   img: Array<string>
+
+// }
  
 const ChatComponent = () => {
-  const [chatItems, setChatItems] = useState([{message_type: 'text', side: 'left', text: "That sounds great. I'd be happy with that.", img: [], number: 0},
+  const [chatItems, _] = useState([
+           {message_type: 'text', side: 'left', text: "That sounds great. I'd be happy with that.", img: [], number: 0},
            {message_type: 'text', side: 'left', text: "Could you send over some pictures of your dog, please?", img: [], number: 0},
            {message_type: 'img', side: 'right', text: "", img: ["/chatplatform/dog-image-1.jpg", "/chatplatform/dog-image-2.jpg", "/chatplatform/dog-image-3.jpg"], number: 0},
            {message_type: 'text', side: 'right', text: "Here are a few pictures. She's a happy girl!", img: [], number: 0},

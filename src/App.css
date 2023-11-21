@@ -1,6 +1,4 @@
-.root {
-    /* height: 100svh; */
-}
+
 
 .mainscreen {
     min-height: 100vh;
@@ -75,7 +73,6 @@
     /* align-self: center; */
     /* flex: 1; */
     /* right: 10%; */
-    
     /* margin: 0px 0px 0px 0px; */
     /* width: 40%; */
     margin-left: auto;
@@ -86,7 +83,6 @@
     margin-top: auto;
     margin-bottom: auto;
     height: 550px;
-    
     display: flex;
     border-radius: 30px 30px 30px 30px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
@@ -101,7 +97,6 @@
     /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19); */
     background: linear-gradient(90deg, hsl(264, 100%, 61%) 0%, hsl(293, 100%, 63%) 100%);
 }
-
 
 .notch {
     background-color: white;
@@ -154,6 +149,7 @@
     display: flex;
     flex-direction: column;
     background-color: hsl(270, 20%, 96%);
+
 }
 
 .profilename {
@@ -237,8 +233,6 @@
     margin-right: 5px;
     margin-top: 20px;
     margin-bottom: 0px;
-    /* max-width: 70%; */
-
 }
 
 .chatbubbleimg img {
@@ -248,8 +242,10 @@
     margin-right: 5px;
     border-radius: 12px;
 }
+
 .chatbubbleimg.right {
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .chatbubblespecial {
@@ -303,7 +299,6 @@
    padding-left: 10px;
    margin-bottom: 10px;
    margin-top: 15px;
-   
 }
 
 .chatfield {
@@ -324,7 +319,7 @@
     /* margin-left: 10px; */
     border: 0px;
     background-color: hsl(271, 36%, 24%);
-    color: white;
+    color: #ffffff;
     border-radius: 50%;
     font-size: 20px;
     padding-bottom: 4px;
@@ -332,11 +327,8 @@
     align-content: center;
     justify-content: center;
     text-align: center;
-    vertical-align:middle;
+    vertical-align: middle;
     margin: 0px;
-
-    
-
 }
 
 .sendbutton:after{
@@ -364,17 +356,22 @@
     height: 50%;
     width: 100%;
     right: -50%;
-    /* right: -120px; */
-
     border-radius: 70% 0 0 0;
-    
   }
+
   .chatsectionbg{
     height: 50%;
     width:100%;
     border-radius: 0% 0 70% 0;
-    /* left: 0% */
     left: -50%;
   }
- 
+
+  .chatphonecontainer{
+    width: 100%;
+  }
+  
+  .sendbutton {
+    padding-bottom: auto;
+    padding-right: auto;
+  }
 }
