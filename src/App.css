@@ -244,7 +244,7 @@
 }
 
 .chatbubbleimg.right {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: end;
 }
 
@@ -369,7 +369,7 @@
   .chatphonecontainer{
     width: 100%;
   }
-  
+
   .sendbutton {
     padding-bottom: auto;
     padding-right: auto;
